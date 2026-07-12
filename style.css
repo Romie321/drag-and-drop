@@ -69,9 +69,8 @@ h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.list.drag-over {
+.list.over {
   background-color: #d0d3d8;
-  border: 2px dashed #999;
 }
 
 @media (max-width: 768px) {
