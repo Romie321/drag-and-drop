@@ -49,3 +49,12 @@ h1 {
   font-size: 1.5rem;
   color: #555;
 }
+
+.card {
+  background-color: #fff;
+  color: #333;
+  padding: 1rem;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: grab;
+}
