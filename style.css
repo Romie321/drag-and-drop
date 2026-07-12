@@ -68,3 +68,8 @@ h1 {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+.list.drag-over {
+  background-color: #d0d3d8;
+  border: 2px dashed #999;
+}
