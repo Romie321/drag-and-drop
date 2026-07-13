@@ -12,3 +12,15 @@ for (let list of lists) {
   list.addEventListener("dragleave", dragLeave);
   list.addEventListener("drop", dragDrop);
 }
+
+function dragStart(e) {
+  e.dataTransfer.setData("text/plain", e.target.id);
+}
+
+function dragEnd(e) {
+  e.target.style.opacity = "1";
+}
+
+function dragOver(e) {
+  e.preventDefault();
+}
