@@ -24,3 +24,21 @@ function dragEnd(e) {
 function dragOver(e) {
   e.preventDefault();
 }
+
+function dragEnter(e) {
+  e.preventDefault();
+  //e.target.style.backgroundColor = "#f0f0f0";
+  this.classList.add("over");
+}
+
+function dragLeave(e) {
+  this.classList.remove("over");
+}
+
+function dragDrop(e) {
+  let id = e.dataTransfer.getData("text/plain");
+  let card = document.getElementById(id);
+
+  this.appendChild(card);
+  this.classList.removr("over");
+}
