@@ -26,13 +26,6 @@ h1 {
   font-size: 2.5rem;
 }
 
-#board-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
 .board {
   display: flex;
   justify-content: space-around;
