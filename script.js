@@ -1,44 +1,29 @@
-let cards = document.querySelectorAll(".card");
-let lists = document.querySelectorAll(".list");
+let draggedCard = null;
 
-for (let card of cards) {
-  card.addEventListener("dragstart", dragStart);
-  card.addEventListener("dragend", dragEnd);
+function drag(event) {
+  draggedCard = event.target;
+  event.dataTransfer.effectAllowed = "move";
+  event.dataTransfer.setData("text/plain", "card");
 }
 
-for (let list of lists) {
-  list.addEventListener("dragover", dragOver);
-  list.addEventListener("dragenter", dragEnter);
-  list.addEventListener("dragleave", dragLeave);
-  list.addEventListener("drop", dragDrop);
+function dragoverHandler(event) {
+  event.preventDefault();
+  event.dataTransfer.dropEffect = "move";
 }
 
-function dragStart(e) {
-  e.dataTransfer.setData("text/plain", e.target.id);
-}
+function dropHandler(event) {
+  event.preventDefault();
 
-function dragEnd(e) {
-  e.target.style.opacity = "1";
-}
+  const targetList = event.currentTarget;
+  const targetCard = event.target.closest(".card");
 
-function dragOver(e) {
-  e.preventDefault();
-}
+  if (!draggedCard || !draggedCard.classList.contains("card")) return;
 
-function dragEnter(e) {
-  e.preventDefault();
-  //e.target.style.backgroundColor = "#f0f0f0";
-  this.classList.add("over");
-}
+  if (targetCard && targetCard !== draggedCard) {
+    targetList.insertBefore(draggedCard, targetCard);
+  } else {
+    targetList.appendChild(draggedCard);
+  }
 
-function dragLeave(e) {
-  this.classList.remove("over");
-}
-
-function dragDrop(e) {
-  let id = e.dataTransfer.getData("text/plain");
-  let card = document.getElementById(id);
-
-  this.appendChild(card);
-  this.classList.removr("over");
+  draggedCard = null;
 }
