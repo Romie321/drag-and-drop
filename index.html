@@ -15,18 +15,18 @@
           <div class="card" draggable="true" ondragstart="drag(event)">
             Wash Dishes
           </div>
-          <div class="card" draggable="true">Take Out Trash</div>
-          <div class="card" draggable="true">Do Laundry</div>
+          <div class="card" draggable="true" ondragstart="drag(event)">Take Out Trash</div>
+          <div class="card" draggable="true" ondragstart="drag(event)">Do Laundry</div>
         </div>
-        <div class="list" id="inprogress">
+        <div class="list" id="inprogress" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"">
           <h2>In Progress</h2>
-          <div class="card" draggable="true">Buy Groceries</div>
-          <div class="card" draggable="true">Walk the Dog</div>
+          <div class="card" draggable="true" ondragstart="drag(event)">Buy Groceries</div>
+          <div class="card" draggable="true" ondragstart="drag(event)">Walk the Dog</div>
         </div>
         <div class="list" id="done">
           <h2>Done</h2>
-          <div class="card" draggable="true">Clean Room</div>
-          <div class="card" draggable="true">Pay Bills</div>
+          <div class="card" draggable="true" ondragstart="drag(event)">Clean Room</div>
+          <div class="card" draggable="true" ondragstart="drag(event)">Pay Bills</div>
         </div>
       </div>
     </div>
