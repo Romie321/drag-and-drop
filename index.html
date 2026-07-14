@@ -10,23 +10,50 @@
     <div class="container">
       <h1>Simple Kanban Board</h1>
       <div class="board">
-        <div class="list" id="todo">
+        <div
+          class="list"
+          id="todo"
+          ondrop="dropHandler(event)"
+          ondragover="dragoverHandler(event)"
+        >
           <h2>To Do</h2>
           <div class="card" draggable="true" ondragstart="drag(event)">
             Wash Dishes
           </div>
-          <div class="card" draggable="true" ondragstart="drag(event)">Take Out Trash</div>
-          <div class="card" draggable="true" ondragstart="drag(event)">Do Laundry</div>
+          <div class="card" draggable="true" ondragstart="drag(event)">
+            Take Out Trash
+          </div>
+          <div class="card" draggable="true" ondragstart="drag(event)">
+            Do Laundry
+          </div>
         </div>
-        <div class="list" id="inprogress" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"">
+        <div
+          class="list"
+          id="inprogress"
+          ondrop="dropHandler(event)"
+          ondragover="dragoverHandler(event)"
+        >
           <h2>In Progress</h2>
-          <div class="card" draggable="true" ondragstart="drag(event)">Buy Groceries</div>
-          <div class="card" draggable="true" ondragstart="drag(event)">Walk the Dog</div>
+          <div class="card" draggable="true" ondragstart="drag(event)">
+            Buy Groceries
+          </div>
+          <div class="card" draggable="true" ondragstart="drag(event)">
+            Walk the Dog
+          </div>
         </div>
-        <div class="list" id="done">
+        <div
+          class="list"
+          id="done"
+          ondrop="dropHandler(event)"
+          ondragover="dragoverHandler(event)"
+        >
           <h2>Done</h2>
-          <div class="card" draggable="true" ondragstart="drag(event)">Clean Room</div>
-          <div class="card" draggable="true" ondragstart="drag(event)">Pay Bills</div>
+          <div class="card" draggable="true" ondragstart="drag(event)">
+            Clean Room
+          </div>
+          <div class="card" draggable="true" ondragstart="drag(event)">
+            Pay Bills
+          </div>
         </div>
       </div>
     </div>
