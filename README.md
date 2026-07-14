@@ -1,53 +1,57 @@
-# Simple Kanban Board (Work in Progress)
-This is an early-stage Kanban board project built with HTML, CSS, and JavaScript.
-The layout structure is in place, but the project is not finished yet. I am currently working on the CSS styling and will begin implementing the JavaScript logic next.
+# Kanban Board — Drag & Drop
+A simple Kanban board built with HTML, CSS, and JavaScript featuring full drag‑and‑drop functionality. This project focuses on interactive UI behavior, clean layout structure, and practicing the native Drag and Drop API to move tasks between columns.
 
-## Project Status
-- The basic HTML structure is complete
+## 📌 Features
+- Drag and drop tasks between columns
 
-- CSS styling is still in progress
+- Clean and simple UI layout
 
-- JavaScript functionality has not been started yet
+- Native JavaScript Drag and Drop API
 
-- The project is actively being worked on and updated
+- Responsive design
 
-## Goals for This Project
-- Build a simple, clean Kanban board layout
+- Easy to customize and expand
 
-- Add drag-and-drop functionality using JavaScript
+## 🧠 What I Learned
+- How to use the Drag and Drop API
 
-- Practice DOM manipulation and event handling
+- Handling drag events (dragstart, dragover, drop, etc.)
 
-- Improve layout spacing and responsiveness with CSS
+-DOM manipulation for moving elements
 
-## Current Features
-- Basic column layout (To Do, In Progress, Done)
+- Structuring a simple Kanban layout with HTML & CSS
 
-- Placeholder task cards
+- Improving UI interaction and feedback
 
-- Initial CSS structure (in progress)
+## 🛠️ Technologies Used
+- HTML
 
-## Upcoming Work
-- Finish CSS styling for spacing, alignment, and responsiveness
+- CSS
 
-- Start JavaScript logic for drag-and-drop interactions
+- JavaScript (ES6)
 
-- Add ability to move cards between columns
+## 🚀 Future Improvements
+- Add localStorage to save board state
 
-- Add visual feedback when dragging
+- Add ability to create new tasks dynamically
 
-- Add optional features like creating new tasks or saving state
+- Add delete/edit functionality
 
-## How to Run
-- Clone the repository
+- Add multiple boards or categories
 
-- Open index.html in your browser
+## 📷 Preview
+<img width="250" height="145" alt="drag and drop" src="https://github.com/user-attachments/assets/c33c6424-8826-4046-8e38-c8852b8f5090" />
 
-- View the current layout and follow progress as updates are made
 
-## Project Structure
-- index.html – Base structure for the board
-
+## 📁 Project Structure
+Code
+/drag-and-drop
+│── index.html
+│── style.css
+│── script.js
+└── README.md
+## 💬 About This Project
+This project was built as part of my ongoing front‑end practice. It helped me understand how interactive UI components work and how to create smooth drag‑and‑drop experiences without external libraries.
 - style.css – Styling (currently being worked on)
 
 - script.js – JavaScript logic (not started yet)
